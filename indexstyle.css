@@ -2,22 +2,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #A7E8BD; /* soft mint green */
+    background-color: #fff; /* match coursework */
     color: #313B72; /* deep navy */
 }
 
 header {
-    background-color: #5F7367; /* muted green-gray */
-    color: #E8C1C5; /* pale pink */
+    background-color: #313B72; /* deep navy */
+    color: #fff;
     text-align: center;
     font-weight: bold;
     font-size: xx-large;
-    border-bottom: 5px solid #B74F6F; /* warm reddish pink */
+    border-bottom: 5px solid #B74F6F; /* reddish pink */
     padding: 20px;
 }
 
 nav {
-    background-color: #B74F6F; /* warm reddish pink */
+    background-color: #E8C1C5; /* pale pink */
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -26,14 +26,25 @@ nav {
 }
 
 nav a {
-    color: #E8C1C5; /* pale pink */
+    color: #B74F6F; /* reddish pink */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #313B72; /* deep navy */
+    color: #5F7367; /* muted green-gray */
+}
+
+/* Make non-nav links use the muted green-gray color */
+body a:not(nav a) {
+    color: #5F7367; /* muted green-gray */
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+body a:not(nav a):hover {
+    color: #313B72; /* deep navy on hover */
 }
 
 p {
@@ -45,7 +56,7 @@ p {
 h2 {
     text-align: center;
     font-size: xx-large;
-    color: #5F7367; /* muted green-gray */
+    color: #313B72; /* deep navy */
 }
 
 #aboutme, #thanks {
@@ -116,4 +127,5 @@ li {
 #thanks {
     padding-top: 30px;
     text-align: center;
+    color: #B74F6F;
 }
